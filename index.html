@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Donation Network</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>🩸 Emergency Blood Donation Network</h1>
+
+  <div class="container">
+
+    <!-- DONOR FORM -->
+    <div class="box">
+      <h2>Register Donor</h2>
+
+      <input id="donorName" placeholder="Name">
+      <input id="donorPhone" placeholder="Phone">
+
+      <select id="donorBlood">
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+
+      <input id="donorLocation" placeholder="Location">
+
+      <button onclick="addDonor()">Register Donor</button>
+    </div>
+
+    <!-- REQUEST FORM -->
+    <div class="box">
+      <h2>Emergency Request</h2>
+
+      <input id="reqHospital" placeholder="Hospital Name">
+
+      <select id="reqBlood">
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>O+</option>
+        <option>O-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+      </select>
+
+      <input id="reqLocation" placeholder="Location">
+
+      <button onclick="findDonors()">Find Donors</button>
+    </div>
+
+  </div>
+
+  <h2>📋 Results</h2>
+  <div id="results"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
